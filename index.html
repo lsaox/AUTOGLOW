@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Auto Glow</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-black text-white">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/logo.svg" alt="Auto Glow Logo" height="115" />
+      </a>
+
+      <!-- Mobile Toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar content -->
+      <div class="collapse navbar-collapse justify-content-between" id="mainNav">
+        <!-- Centered links -->
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-3">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- Right-side transparent buttons -->
+        <div class="d-flex gap-2">
+          <a href="tel:1234567890" class="btn btn-outline-light btn-sm rounded-pill custom-btn">
+            <i class="fas fa-phone"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline-light btn-sm rounded-pill custom-btn">
+            <i class="fas fa-envelope"></i> Contact
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+ <header class="hero d-flex align-items-center justify-content-center text-center">
+  <div class="hero-overlay text-white">
+    <h1 class="display-3 fw-bold">Premium Auto Detailing</h1>
+    <a href="#services" class="btn btn-outline-light btn-lg px-5 py-3 mt-4 hero-btn">
+      <i class="fas me-2"></i> Learn More
+    </a>
+  </div>
+</header>
+<section class="container my-5">
+  <div class="row g-3">
+    <div class="col-6">
+      <div class="grid-box position-relative">
+        <img src="assets/car1.png" class="img-cover" alt="Ceramic Coating" />
+        <div class="overlay-text d-flex align-items-center justify-content-center">
+          <span>Ceramic Coating</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="grid-box position-relative">
+        <img src="assets/car3.jpg" class="img-cover" alt="Interior Detailing" />
+        <div class="overlay-text d-flex align-items-center justify-content-center">
+          <span>Interior Detailing</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="grid-box position-relative">
+        <img src="assets/car33.jpg" class="img-cover" alt="Professional Wax" />
+        <div class="overlay-text d-flex align-items-center justify-content-center">
+          <span>Professional Wax</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="grid-box position-relative">
+        <img src="assets/car4.jpg" class="img-cover" alt="Engine Bay Detail" />
+        <div class="overlay-text d-flex align-items-center justify-content-center">
+          <span>Engine Bay Detail</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about-section position-relative text-white">
+  <div class="about-overlay d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-start">
+        <div class="col-md-6 col-lg-5 text-start">
+          <h2 class="display-5 fw-bold">About Us</h2>
+          <p>
+            Auto Glow is a Houston-based mobile car wash. We wash your vehicle at your convenience — whether you're at home or work. We come fully equipped with our own water supply and electricity.
+          </p>
+          <a href="services.html" class="btn btn-outline-light mt-3">Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container my-5" id="faq">
+  <h2 class="text-center mb-5 display-6 fw-bold text-white">FAQ</h2>
+
+  <div class="accordion luxury-faq" id="faqAccordion">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+          <i class="fas fa-map-marker-alt me-2"></i> Where do we service?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We service all of Houston and surrounding areas.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+          <i class="fas fa-spray-can-sparkles me-2"></i> Do we ceramic coat vehicles?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We offer ceramic coatings for paint, wheels, brake calipers, and windows.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+          <i class="fas fa-wand-magic-sparkles me-2"></i> Do we offer paint correction or polish?
+        </button>
+      </h2>
+      <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We offer paint correction.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+          <i class="fas fa-chair me-2"></i> Do we offer full interior detail?
+        </button>
+      </h2>
+      <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We offer interior details and interior coatings.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+          <i class="fas fa-calendar-alt me-2"></i> When is our next availability?
+        </button>
+      </h2>
+      <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Appointments only. Please <a href="#contact" class="text-decoration-underline text-light">contact us</a>.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer bg-black text-light pt-5 pb-4">
+  <div class="container">
+    <div class="row align-items-start">
+      <!-- Logo + Tagline -->
+      <div class="col-md-4 mb-4">
+        <img src="assets/logo.svg" alt="Auto Glow Logo" height="180" class="mb-3">
+      
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="footer-link">Home</a></li>
+          <li><a href="services.html" class="footer-link">Services</a></li>
+          <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact + Social -->
+      <div class="col-md-4 mb-4">
+        <h5 class="text-uppercase fw-bold mb-3">Contact</h5>
+        <p class="mb-1"><i class="fas fa-phone-alt me-2"></i> <a href="281-781-9627" class="footer-link">281-781-9627</a></p>
+        <p class="mb-3"><i class="fas fa-envelope me-2"></i> <a href="mailto:Autoglowmobilewash@gmail.com" class="footer-link">Autoglowmobilewash@gmail.com</a></p>
+        
+        <div class="d-flex gap-3">
+          <a href="#" class="text-light fs-5"><i class="fab fa-instagram"></i></a>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Text + Credit -->
+    <div class="text-center mt-4 border-top border-secondary pt-3">
+      <small class="text-muted">&copy; 2025 Auto Glow. All rights reserved. | Website designed by 
+        <a href="https://echelonwebdesign.com" target="_blank" class="footer-link">Echelon Web Design</a>
+      </small>
+    </div>
+  </div>
+</footer>
+
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

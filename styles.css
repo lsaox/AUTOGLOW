@@ -1,0 +1,213 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('assets/frontpagepic2.svg') center center/cover no-repeat;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+}
+
+/* Image Grid */
+.grid-image {
+  position: relative;
+}
+.grid-image img {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.grid-image:hover img {
+  transform: scale(1.05);
+}
+.overlay-text {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: white;
+}
+.grid-image:hover .overlay-text {
+  opacity: 1;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('assets/frontpagepic2.svg') center center/cover no-repeat;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.616);
+}
+
+/* Ensures the grid fills the screen evenly */
+.grid-box {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: 99%;
+  overflow: hidden;
+}
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Overlay styling */
+.overlay-text {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.603);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 1000;
+  text-align: center;
+}
+
+.grid-box:hover .overlay-text {
+  opacity: 1;
+}
+.about-section {
+  background-image: url('assets/carcar.jpg'); /* Replace with your actual background */
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-overlay {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.959), rgba(0, 0, 0, 0));
+  padding: 2rem;
+}
+
+.about-section h2,
+.about-section p {
+  color: white;
+}
+/* Smooth icon toggle */
+.accordion-button .toggle-icon {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:not(.collapsed) .toggle-icon {
+  transform: rotate(45deg);
+  color: #ffffff;
+}
+
+.luxury-faq .accordion-item {
+  background-color: #111;
+  border: 1px solid #444;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.luxury-faq .accordion-button {
+  background-color: #111;
+  color: #fff;
+  font-weight: 500;
+  border: none;
+  padding: 1.25rem;
+  transition: background-color 0.3s ease;
+}
+
+.luxury-faq .accordion-button:hover {
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.luxury-faq .accordion-button::after {
+  filter: invert(1);
+}
+
+.luxury-faq .accordion-body {
+  background-color: #181818;
+  padding: 1.25rem;
+  color: #ccc;
+  border-top: 1px solid #333;
+  border-radius: 0 0 8px 8px;
+}
+
+.luxury-faq .accordion-item:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
+.hero-btn {
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+.hero-btn:hover {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+
+.footer-link {
+  color: #aaa;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+footer h5 {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+footer p, footer small {
+  color: #aaa;
+}
+/* Optional: Auto open on hover with JS (must be added via script) */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
