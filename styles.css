@@ -417,3 +417,38 @@ body {
     justify-content: center;
   }
 }
+/* Hero Section */
+.hero {
+  height: 100vh; /* Full height of the viewport */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: relative;
+  z-index: 2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .hero {
+    height: 70vh; /* Reduce height on mobile screens */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Smaller font size for hero heading */
+  }
+
+  .hero-btn {
+    font-size: 1.2rem; /* Adjust button size */
+    padding: 0.75rem 2rem; /* Button padding */
+  }
+
+  .hero-overlay {
+    padding: 1rem; /* Padding for the text */
+  }
+}
